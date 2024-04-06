@@ -40,3 +40,11 @@ card {
    height: 20vh;
 }
 
+button {
+   background-color: hotpink;
+}
+
+a {
+   text-decoration: none;
+}
+
