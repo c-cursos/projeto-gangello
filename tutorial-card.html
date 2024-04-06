@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Tutorial Card</title>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="./src/assets/scripts/cards.js" defer></script>
+   <style>
+      body {
+         display: grid;
+         place-items: center;
+         height: 90vh;
+         background: #27f3;
+      }
+      main {
+         display: grid;
+         grid-auto-flow: column;
+         width: 100%;
+         margin: auto;
+         align-items: center;
+         justify-content: center;
+      }
+      tutorial {
+         line-height: 1.3rem;
+         flex: .6;
+         margin: auto;
+         padding: 3vw;
+         height: 80%;
+         background: #fff;
+         color: #212329;
+      }
+      cards {
+         flex: .4;
+         height: 80%;
+         margin: auto;
+         padding: 3vw;
+         background: #f5f5f5;
+      }
+   </style>
+</head>
+<body>
+   <main>
+      <tutorial>
+         <h1>Como desenhar o card</h1>
+         <p>
+            <ol>
+               <li>
+                  linkar o arquivo js na head da página com o atributo: defer
+                  <br>
+                  <b>path do arquivo </b>
+                  src/assets/scripts/cards.js
+               </li>
+               <li>
+                  <b>usar a tag do card: </b>
+                  &lt;lyh-card&gt;&lt;/lyh-card&gt;
+               </li>
+               <li>
+                  passar os atributos com as informações como no exemplo:
+                  <br>
+                  <ul>
+                     <li>
+                        <b>nome=</b>"Lýh" <br>
+                     </li>
+                     <li>
+                        <b>email=</b>"noely.gangello@gmail.com" <br>
+                     </li>
+                     <li>
+                        <b>telefone=</b>"( 13 ) 9 9199 - 9999" <br>
+                     </li>
+                     <li>
+                        <b>idade=</b>"28"
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  atributos opcionais: 
+                  <ul>
+                     <li>
+                        background-color="#e53979"
+                     </li>
+                     <li>
+                        shadow-color="#fc0fc0"
+                     </li>
+                     <li>
+                        border="#905"
+                     </li>
+                     <li>
+                        title-color="#d51111"
+                     </li>
+                     <li>
+                        text-color="#fff"
+                     </li>
+                  </ul>
+               </li>
+            </ol>
+         </p>
+      </tutorial>
+      <cards>
+         <section>
+      <pre>
+         &lt;lyh-card 
+            nome="Lýh"
+            email="noely.gangello@gmail.com"
+            telefone="( 13 ) 9 9199 - 9999"
+            idade="28"
+         &gt;&lt;/lyh-card&gt;
+      </pre>
+         </section>
+         <lyh-card 
+            nome="Lýh"
+            email="noely.gangello@gmail.com"
+            telefone="( 13 ) 9 9199 - 9999"
+            idade="28"
+         ></lyh-card>
+      </cards>
+   </main>
+</body>
+</html>
